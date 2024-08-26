@@ -114,6 +114,37 @@ html {
 .nav-list {
   height: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list-div, .foot-list-div{
+  width: 25%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list-div{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-list-div button, .foot-list-div button{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: x-large;
+  border: none;
+  outline: none;
+  padding: 5% 10%;
+  border-radius: 10px;
+}
+
+.nav-list-div button:hover, .foot-list-div button:hover{
+  transform: scale(1.15);
+  background-color: #000;
+  color: wheat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .nav-link {
@@ -414,24 +445,12 @@ html {
 /* End of Popular tours */
 
 /* Stories */
+
+
+
 .stories {
   padding: 10rem 0;
   position: relative;
-}
-
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-}
-
-.bg-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .stories-wrapper {
@@ -446,11 +465,9 @@ html {
   margin: 5rem;
   width: 70%;
   box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.4);
-  transform: skewX(20deg);
 }
 
 .story {
-  transform: skewX(-20deg);
   display: flex;
 }
 
@@ -480,7 +497,8 @@ html {
 
 .story-paragraph::first-letter {
   margin-left: 1rem;
-}
+} 
+
 /* End of Stories */
 
 /* Contact */
